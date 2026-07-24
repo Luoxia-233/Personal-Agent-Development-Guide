@@ -46,7 +46,9 @@ Agent **不替代**以下决策：
 - 修改已有公共接口（interface / abstract class / public API）
 - 修改或创建配置结构（settings.json / metadata.db 等）
 - 移动文件或改变目录结构
-- 一次修改超过 3 个模块
+- 修改模块职责
+- 改变依赖方向
+- 修改数据格式 / 数据模型
 
 ### Level 3 — 必须询问
 
@@ -57,6 +59,30 @@ Agent **不替代**以下决策：
 - 大规模重构（超过 5 个文件、超过 300 行）
 - 删除大量代码（超过 50 行连续删除）
 - 修改项目文档中的项目目标
+
+---
+
+## Git 权限
+
+### Level 1 — 自动允许
+
+- `git status`
+- `git diff`
+- `git add`
+- 生成 Commit Message
+
+### Level 2 — 确认后执行
+
+- `git commit`（Agent 生成 Message → 用户确认 → Agent 执行）
+
+### Level 3 — 禁止自动执行
+
+- `git push`
+- `git merge`
+- `git rebase`
+- `git reset --hard`
+- `git tag`
+- 删除 Branch
 
 ---
 
@@ -162,7 +188,7 @@ docs/issues/ 目录下当前正在进行的 Issue
 - [ ] 已完成测试（如有测试框架）
 - [ ] 更新 CHANGELOG.md
 - [ ] 更新 TODO.md（将对应项标记完成）
-- [ ] 提交 Git Commit
+- [ ] Agent 生成 Commit Message，用户确认后执行 `git commit`
 - [ ] 不遗留 TODO / FIXME 注释
 - [ ] 未超出 Issue 定义的范围
 

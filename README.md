@@ -6,8 +6,8 @@
 
 | 文件 | 说明 |
 |------|------|
-| `AGENTS.md` | Agent 权限分级、角色定义、工作流、编码约定、Git 规范、DoD |
-| `LEARNING_MODE.md` | 教学原则、输出格式、认知负荷控制 |
+| `AGENTS.md` | Agent 权限分级、Git 权限、角色定义、工作流、编码约定、DoD |
+| `LEARNING_MODE.md` | 教学原则、输出格式、Learning Check、学习模式优先级、认知负荷控制 |
 | `ISSUE_WORKFLOW.md` | Issue 开发步骤 (Step 0–6) |
 | `ARCHITECTURE_TEMPLATE.md` | 架构文档模板 |
 | `ROADMAP_TEMPLATE.md` | 路线图模板 |
@@ -37,3 +37,14 @@ cp docs/issues/ISSUE_TEMPLATE.md <new-project>/docs/issues/
 - 文档服务于开发，不为完善而创建文档
 - 模板保留结构，业务内容由项目自行填写
 - 所有规范均经过实际项目验证（Horizon Radio v0.1）
+
+## 非目标
+
+本项目不是：
+
+- 自动生成完整软件的框架
+- 替代软件工程知识的教程
+- 通用 AI Agent 开发框架
+- 企业级工程管理模板
+
+它只是：个人开发者使用 AI 辅助开发时的一套约束模板。
