@@ -23,7 +23,9 @@
 | `ROADMAP_TEMPLATE.md` | 路线图模板 |
 | `TODO_TEMPLATE.md` | 待办事项模板 |
 | `CHANGELOG_TEMPLATE.md` | 变更日志模板 |
+| `CHANGELOG.md` | 项目自身变更日志 |
 | `BUGS_TEMPLATE.md` | Bug 追踪模板 |
+| `GITIGNORE_TEMPLATE` | .gitignore 模板 |
 | `docs/adr/ADR_TEMPLATE.md` | 架构决策记录模板 |
 | `docs/issues/ISSUE_TEMPLATE.md` | Issue 模板 |
 | `docs/agent/ISSUE_WORKFLOW.md` | Issue 工作流详细说明 |
@@ -57,4 +59,4 @@ cp docs/issues/ISSUE_TEMPLATE.md <new-project>/docs/issues/
 - 通用 AI Agent 开发框架
 - 企业级工程管理模板
 
-它只是：个人开发者使用 AI 辅助开发时的一套约束模板。
+它是一套帮助个人开发者在 AI 辅助开发过程中保持项目理解、决策能力和长期维护能力的约束模板。
